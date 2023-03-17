@@ -1,0 +1,14 @@
+.messages{
+    background-color:#ddddf7 ;
+    padding: 10px;
+    height: calc(100% - 150px);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+@media screen and (max-width:800px) {
+    .messages{
+        padding: 8px;
+        height: calc(100% - 110px);
+    }
+    
+}

@@ -1,0 +1,56 @@
+.home{
+    /* background: linear-gradient(
+    to top,
+    rgba(63, 154, 57, 0.847) 10% ,
+    rgb(255,255,255),
+    rgba(237, 169, 96, 0.852)100%
+  ); */
+  /* background: url("../img/background.jpg") ;
+  background-size: cover; */
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     overflow: hidden;
+}
+.container{
+    scroll-behavior: auto;
+    border: 1px solid rgb(228, 209, 209);
+    border-radius: 10px;
+    width: 70%;
+    height: 85%;
+    display: flex;
+    overflow: hidden;
+}
+.sidebar{
+    flex: 1;
+    border-right: 1px solid #3e3c61;
+    background-color: #484667;
+}
+.chat{
+    flex: 2;
+}
+.changeFullScreen{
+    width: 99.98%;
+    height: 99.9%;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid rgb(21, 18, 93);
+}
+@media screen and (max-width:800px) {
+    .body{
+        position: fixed;
+    }
+    .container{
+        margin-top: -100px;
+        width: 95%;
+        height: 75%;
+        border-radius: 5px;
+    }
+    .changeFullScreen{
+        width: 98.8%;
+        height: 80%;
+        margin-bottom: 150px;
+    }
+}
